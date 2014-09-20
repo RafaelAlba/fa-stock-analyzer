@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+$:.unshift File.expand_path('../../lib', __FILE__)
+
+require "date"
+require "analyzer/burst_service"
+
+if ARGV.size == 2
+  begin
+    first_price_date = Date.parse(ARGV[0])
+  rescue ArgumentError => e
+    puts "#{e.message}. Suggested date format example: '2004-04-01'"
+    exit
+  end
+
+  filename = ARGV[1]
+
+  Analyzer::BurstService.best_bursting_stocks(first_price_date, filename).each do |burst|
+    puts burst
+  end
+
+else
+  puts "USAGE: analyze first_price_date_string file_name (date_string format: '2004-04-01')"
+end
