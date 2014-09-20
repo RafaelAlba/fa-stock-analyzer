@@ -30,11 +30,9 @@ most_recent_highest_burst
 
 # Instructions for running from command line
 
-- Install required gems 
+- Install required gems  
   `bundle install --path vendor/bundle`
-- Run the analyzer for the test data set(burst-data.txt) representing
-  stock prices from Apr 2004
+- Run the analyzer for the test data set(burst-data.txt) representing  stock prices from Apr 2004  
   `bundle exec bin/analyzer "2004-04-01" burst-data.txt`
-
-- Run the tests
+- Run the tests  
   `bundle exec rspec`
