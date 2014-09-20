@@ -1,0 +1,2 @@
+fa-stock-analyzer
+=================
