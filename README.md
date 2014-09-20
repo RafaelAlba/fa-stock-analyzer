@@ -19,13 +19,13 @@ customer to make things go quicker since my I thought my
 ## Bursting Service
 Want to find out the biggest bursts for your preferred stocks?  This is the perfect service for you!
 
-best_bursting_stocks
+- best_bursting_stocks  
   Given a pipe delimited file with the format:
      full stock name, stock symbol, and chronological stock prices.
      It will organize the stocks based on their price bursts.
 
 
-most_recent_highest_burst
+- most_recent_highest_burst  
   Given an array of prices ordered sequentially, it will return an Analyzer::Burst object containing the most recent and highest burst in the stock's history.
 
 # Instructions for running from command line
