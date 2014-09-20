@@ -11,6 +11,7 @@ module Analyzer
     # Given a pipe delimited file with the format:
     #    full stock name, stock symbol, and chronological stock prices.
     #    It will organize the stocks based on their price bursts.
+    # @param first_price_date - Date object corresponding to the first
     # @param filename - file containing price information for different
     #    stocks. Assumes file is properly formatted.
     # @return ordered [Analyzer::Burst] based on each stock's highest burst.
@@ -41,6 +42,9 @@ module Analyzer
     # Given an array of prices ordered sequentially, it will
     #   return an Analyzer::Burst object containing the most recent
     #   and highest burst in the stock's history.
+    # @param first_price_date - Date object corresponding to the first
+    #    price in the array of prices
+    # @param stock_symbol - symbol for the stock being processed
     # @param Prices - array containing prices for a stock.
     #    Prices are ordered sequentially in array, with oldest
     #    price first and most recent price last.

@@ -3,7 +3,7 @@
 $:.unshift File.expand_path('../../lib', __FILE__)
 
 require "date"
-require "analyzer/burst_service"
+require "analyzer"
 
 if ARGV.size == 2
   begin
